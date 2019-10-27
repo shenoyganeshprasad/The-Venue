@@ -4,13 +4,15 @@ import './resources/styles.css'
 import Header from './components/header-footer/Header'
 import Featured from './components/featured'
 import VenueNfo from './components/venueNFO'
+import Highlight from './components/highlights'
 
 function App() {
   return (
-    <div className="App" style={{height: '1500px', backgroundColor: 'cornflowerblue'}}>
+    <div className="App">
       <Header />
       <Featured />
       <VenueNfo />
+      <Highlight />
     </div>
   );
 }
