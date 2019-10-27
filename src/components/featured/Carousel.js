@@ -14,16 +14,17 @@ const Carousel = () => {
           };
       return (
             <div className="carrousel_wrapper" style={{overflow:'hidden', height:`${window.innerHeight}px`}}>
-                  <Slider {...settings}></Slider>
-                  <div>
-                        <div className="carrousel_image" style={{background:`url(${img1})`, height:`${window.innerHeight}px`}}></div>
-                  </div>
-                  <div>
-                  <div className="carrousel_image" style={{background:`url(${img2})`, height:`${window.innerHeight}px`}}></div>
-                  </div>
-                  <div>
-                  <div className="carrousel_image" style={{background:`url(${img3})`, height:`${window.innerHeight}px`}}></div>
-                  </div>
+                  <Slider {...settings}>
+                        <div>
+                              <div className="carrousel_image" style={{background:`url(${img1})`, height:`${window.innerHeight}px`}}></div>
+                        </div>
+                        <div>
+                        <div className="carrousel_image" style={{background:`url(${img2})`, height:`${window.innerHeight}px`}}></div>
+                        </div>
+                        <div>
+                        <div className="carrousel_image" style={{background:`url(${img3})`, height:`${window.innerHeight}px`}}></div>
+                        </div>
+                  </Slider>
             </div>
       );
 };
