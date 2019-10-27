@@ -1,5 +1,6 @@
 import React from 'react'
 import './resources/styles.css'
+import {Element} from 'react-scroll'
 
 import Header from './components/header-footer/Header'
 import Featured from './components/featured'
@@ -13,11 +14,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Featured />
-      <VenueNfo />
-      <Highlight />
-      <Pricing />
-      <Location />
+      <Element name="featured"><Featured /></Element>
+      <Element name="venueNfo"><VenueNfo /></Element>
+      <Element name="highlight"><Highlight /></Element>
+      <Element name="pricing"><Pricing /></Element>
+      <Element name="location"><Location /></Element>
       <Footer />
     </div>
   );
